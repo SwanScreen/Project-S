@@ -1,12 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" itemscope itemtype="http://schema.org/Product">
 <head>
-<!--
-Code is art.
-Love it.
-Live it.
--->
-
+    <!-- TESTING FTPLOY -->
     <!-- METAS -->
     <title>SwanScreen | Free online slideshow for instagram and twitter</title>
     <meta name="description"
@@ -37,7 +32,7 @@ Live it.
     <meta name="twitter:image:height" content="256">
     <meta name="twitter:data1" content="FREE">
     <meta name="twitter:label1" content="Price">
-	
+
     <!-- Schema.org metas -->
     <meta itemprop="name" content="Swanscreen">
     <meta itemprop="description" content="Display beautiful live,real-time Instagram slideshows at weddings, parties, conferences, concerts or anywhere there's a screen.">
@@ -282,5 +277,5 @@ Live it.
 
 	</body>
 
-	
+
 </html>
