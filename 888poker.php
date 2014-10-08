@@ -1,4 +1,7 @@
-<?php /*$tag=$ _POST[ 'tag'];*/ $tag="masterminds888" ; ?>
+<?php
+    /*$tag=$ _POST[ 'tag'];*/
+    $tag="masterminds888" ;
+?>
 
 <!DOCTYPE html>
 <html itemscope itemtype="http://schema.org/Product">
