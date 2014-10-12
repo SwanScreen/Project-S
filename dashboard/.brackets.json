@@ -1,0 +1,27 @@
+{
+    "path": {
+        "scss/*.scss": {
+            "sass.enabled": false,
+            "sass.options": {
+                "outputDir": "../css/",
+                "includePaths": [],
+                "imagePath": null,
+                "sourceComments": "map",
+                "sourceMap": "style.css.map",
+                "outputStyle": "nested"
+            },
+            "linting.enabled": true
+        },
+        "scss/foundation/*.scss": {
+            "sass.enabled": false,
+            "sass.options": {
+                "outputDir": "../css/",
+                "includePaths": [],
+                "imagePath": null,
+                "sourceComments": "map",
+                "sourceMap": "foundation.css.map",
+                "outputStyle": "nested"
+            }
+        }
+    }
+}

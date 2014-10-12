@@ -1,0 +1,217 @@
+/* line 11, ../scss/dash_scss/_a_base.scss */
+header {
+  background-color: #1f7cc1;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  height: 3.4em;
+  font-weight: 300; }
+
+/* line 18, ../scss/dash_scss/_a_base.scss */
+.logo {
+  margin: 0 auto;
+  max-width: 400px; }
+
+/* line 22, ../scss/dash_scss/_a_base.scss */
+a.create_new {
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  position: absolute;
+  top: 0;
+  left: 0;
+  line-height: 3.4em; }
+  /* line 28, ../scss/dash_scss/_a_base.scss */
+  a.create_new img {
+    width: 53px;
+    padding: 5px 12px 12px 12px; }
+
+/* line 33, ../scss/dash_scss/_a_base.scss */
+a.create_new:hover {
+  background: #1b6ba6; }
+
+/* line 36, ../scss/dash_scss/_a_base.scss */
+.home_logout {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #fff;
+  line-height: 3.4em;
+  padding-right: 15px; }
+  /* line 43, ../scss/dash_scss/_a_base.scss */
+  .home_logout a {
+    color: #fff; }
+  /* line 46, ../scss/dash_scss/_a_base.scss */
+  .home_logout a:hover {
+    text-decoration: underline; }
+
+@media all and (max-width: 699px) {
+  /* line 51, ../scss/dash_scss/_a_base.scss */
+  header {
+    height: auto; }
+
+  /* line 54, ../scss/dash_scss/_a_base.scss */
+  header .wrapper {
+    max-width: 400px;
+    margin: 0 auto;
+    position: relative; }
+
+  /* line 59, ../scss/dash_scss/_a_base.scss */
+  .home_logout {
+    text-align: right;
+    margin-top: 10%;
+    width: 130px;
+    right: 0; }
+
+  /* line 66, ../scss/dash_scss/_a_base.scss */
+  a.create_new {
+    position: relative; } }
+/* line 1, ../scss/dash_scss/_b_main.scss */
+.hour_meter {
+  padding-top: 25px;
+  color: #1f7cc1; }
+  /* line 4, ../scss/dash_scss/_b_main.scss */
+  .hour_meter .remaining {
+    display: table;
+    height: 3.3em;
+    padding: 0; }
+    /* line 8, ../scss/dash_scss/_b_main.scss */
+    .hour_meter .remaining div {
+      display: table-cell;
+      vertical-align: bottom; }
+
+/* line 14, ../scss/dash_scss/_b_main.scss */
+.row.bottom {
+  clear: both; }
+
+/* line 17, ../scss/dash_scss/_b_main.scss */
+.row.meter_outer {
+  height: 8px;
+  background-color: #bbbbbb;
+  box-shadow: 0px 0px 0px 1px #A3A3A3;
+  margin-bottom: 15px; }
+  /* line 22, ../scss/dash_scss/_b_main.scss */
+  .row.meter_outer .meter_inner {
+    background-color: #1f7cc1;
+    height: 8px;
+    width: 0%;
+    -webkit-transition: all 2.2s ease-in;
+    transition: all 2.2s;
+    margin: 0; }
+
+/* line 31, ../scss/dash_scss/_b_main.scss */
+ul.tag_list {
+  list-style-type: none;
+  margin: 0; }
+
+/* line 35, ../scss/dash_scss/_b_main.scss */
+.edit_delete {
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  opacity: .6;
+  width: 45px;
+  display: inline-block;
+  line-height: 50px;
+  text-align: center;
+  float: left;
+  padding: 0 12px;
+  margin-top: 0.5em; }
+  /* line 45, ../scss/dash_scss/_b_main.scss */
+  .edit_delete:hover {
+    opacity: .9;
+    background: #e2e2e2; }
+  /* line 49, ../scss/dash_scss/_b_main.scss */
+  .edit_delete.delete:hover {
+    background: #F0CACA; }
+
+/* line 53, ../scss/dash_scss/_b_main.scss */
+.tag_list_item {
+  background: #e8e8e8;
+  margin-bottom: 10px; }
+  /* line 56, ../scss/dash_scss/_b_main.scss */
+  .tag_list_item .tag_description {
+    display: inline-block; }
+  /* line 59, ../scss/dash_scss/_b_main.scss */
+  .tag_list_item .tag_name {
+    font-size: 1.8em;
+    line-height: 2.45em; }
+  /* line 63, ../scss/dash_scss/_b_main.scss */
+  .tag_list_item .tag_status {
+    color: #a2a2a2; }
+
+/* line 69, ../scss/dash_scss/_b_main.scss */
+ul.button-group li {
+  height: 51px;
+  margin: 0; }
+  /* line 72, ../scss/dash_scss/_b_main.scss */
+  ul.button-group li a.button {
+    max-width: 76px;
+    margin-top: 0.8em;
+    margin-bottom: 0; }
+
+/* line 79, ../scss/dash_scss/_b_main.scss */
+.button-group > li .button.small {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem; }
+
+/* line 83, ../scss/dash_scss/_b_main.scss */
+.small.img.button img {
+  width: 27px; }
+
+@media all and (max-width: 1023px) {
+  /* line 87, ../scss/dash_scss/_b_main.scss */
+  .tag_list_item .tag_status {
+    display: block; }
+
+  /* line 90, ../scss/dash_scss/_b_main.scss */
+  .tag_list_item .tag_name {
+    font-size: 1.5em;
+    line-height: 1em; } }
+@media all and (max-width: 700px) {
+  /* line 96, ../scss/dash_scss/_b_main.scss */
+  ul.button-group {
+    float: left !important;
+    clear: both;
+    margin-left: 2px; }
+    /* line 100, ../scss/dash_scss/_b_main.scss */
+    ul.button-group li a.button {
+      max-width: 74px;
+      margin-top: 0; } }
+/* line 1, ../scss/dash_scss/_c_create.scss */
+section.create {
+  font-size: 1em; }
+  /* line 3, ../scss/dash_scss/_c_create.scss */
+  section.create label {
+    font-size: 1.5em; }
+  /* line 6, ../scss/dash_scss/_c_create.scss */
+  section.create .rem-3 {
+    font-size: 2rem;
+    height: 3rem;
+    line-height: 3rem; }
+  /* line 11, ../scss/dash_scss/_c_create.scss */
+  section.create .demo_box {
+    width: 300px;
+    height: 200px;
+    background: #000; }
+  /* line 17, ../scss/dash_scss/_c_create.scss */
+  section.create .animation.row,
+  section.create .toggels.row {
+    padding-top: 25px; }
+  /* line 20, ../scss/dash_scss/_c_create.scss */
+  section.create input[type="radio"] {
+    zoom: 2;
+    margin-bottom: 0px;
+    position: relative;
+    top: 2px; }
+  /* line 26, ../scss/dash_scss/_c_create.scss */
+  section.create .animation_box {
+    margin-top: 15px; }
+  /* line 29, ../scss/dash_scss/_c_create.scss */
+  section.create .exit {
+    font-weight: 900;
+    text-align: right;
+    font-size: 40px; }
+    /* line 33, ../scss/dash_scss/_c_create.scss */
+    section.create .exit a {
+      opacity: .3; }
+    /* line 36, ../scss/dash_scss/_c_create.scss */
+    section.create .exit a:hover {
+      opacity: .7; }

@@ -1,0 +1,59 @@
+[
+
+    {
+        "tag_id": "100000",
+        "owner_user_id": "10123",
+        "tag_value": "1party",
+        "animation_id": "1",
+        "total_photos": "51",
+        "total_videos": "11",
+        "total_tweets": "11",
+        "config": [{
+            "use_twitter": "true"
+        }, {
+            "use_instagram": "false"
+        }]
+    }, {
+        "tag_id": "100001",
+        "owner_user_id": "10123",
+
+        "tag_value": "2fun",
+        "animation_id": "2",
+        "total_photos": "25",
+        "total_videos": "5",
+        "total_tweets": "25",
+        "config": [{
+            "use_twitter": "true"
+        }, {
+            "use_instagram": "true"
+        }]
+    }, {
+        "tag_id": "100002",
+        "owner_user_id": "10123",
+
+        "tag_value": "3LocalProductMMJ",
+        "animation_id": "1",
+        "total_photos": "134",
+        "total_videos": "24",
+        "total_tweets": "65",
+        "config": [{
+            "use_twitter": "true"
+        }, {
+            "use_instagram": "false"
+        }]
+    }, {
+        "tag_id": "100003",
+        "owner_user_id": "10123",
+        "tag_value": "4four",
+        "animation_id": "3",
+        "total_photos": "1223",
+        "total_videos": "1",
+        "total_tweets": "111",
+        "config": [{
+            "use_twitter": "true"
+        }, {
+            "use_instagram": "true"
+        }]
+    }
+
+]

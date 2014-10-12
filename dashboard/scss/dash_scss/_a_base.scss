@@ -1,0 +1,69 @@
+$primary-color:#1f7cc1 !default;   // bondi-blue
+$secondary-color:#888 !default; // white-lilac
+$alert-color:#f04124 !default;     // cinnabar
+$success-color:#43AC6A !default;   // sea-green
+$warning-color:#f08a24 !default;   // carrot
+$info-color:#7fc6e3 !default;      // cornflower
+@mixin transition() {
+    -webkit-transition: all .3s;
+    transition: all .3s;
+}
+header {
+    background-color: $primary-color;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    height: 3.4em;
+    font-weight: 300;
+}
+.logo {
+    margin: 0 auto;
+    max-width: 400px;
+}
+a.create_new {
+    @include transition;
+    position: absolute;
+    top: 0;
+    left: 0;
+    line-height: 3.4em;
+    img {
+        width: 53px;
+        padding: 5px 12px 12px 12px;
+    }
+}
+a.create_new:hover {
+    background: #1b6ba6;
+}
+.home_logout {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #fff;
+    line-height: 3.4em;
+    padding-right: 15px;
+    a {
+        color: #fff;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+}
+@media all and (max-width: 699px) {
+    header {
+        height: auto;
+    }
+    header .wrapper {
+        max-width: 400px;
+        margin: 0 auto;
+        position: relative;
+    }
+    .home_logout {
+        text-align: right;
+        margin-top: 10%;
+        ;
+        width: 130px;
+        right: 0;
+    }
+    a.create_new {
+        position: relative;
+    }
+}

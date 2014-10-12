@@ -1,0 +1,40 @@
+section.create {
+    font-size: 1em;
+    label {
+        font-size: 1.5em;
+    }
+    .rem-3 {
+        font-size: 2rem;
+        height: 3rem;
+        line-height: 3rem;
+    }
+    .demo_box {
+        width: 300px;
+        height: 200px;
+        background: #000;
+    }
+    .animation.row,
+    .toggels.row {
+        padding-top: 25px;
+    }
+    input[type="radio"] {
+        zoom: 2;
+        margin-bottom: 0px;
+        position: relative;
+        top: 2px;
+    }
+    .animation_box {
+        margin-top: 15px;
+    }
+    .exit {
+        font-weight: 900;
+        text-align: right;
+        font-size: 40px;
+        a {
+            opacity: .3;
+        }
+        a:hover {
+            opacity: .7;
+        }
+    }
+}

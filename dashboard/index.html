@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en" ng-app="myApp">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Angular Demo</title>
+
+    <!-- Initial scripts -->
+    <!--unnecessary <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular-route.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular-animate.min.js"></script>
+    <script src="js/foundation/modernizr.foundation.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/controllers.js"></script>
+
+    <!-- Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,900,300italic' rel='stylesheet' type='text/css'>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/foundation.css">
+    <link rel="stylesheet" href="/css/dashboard.css">
+</head>
+
+<body id="body">
+
+    <header>
+        <div class="wrapper">
+            <div class="logo">
+                <a href='#/dashboard'>
+                    <img src="images/Admin1_03.png" alt="Create new slideshow" />
+                </a>
+            </div>
+
+            <a class="create_new" href='#/create'>
+                <img src="images/Admin1_06.png" alt="Create new slideshow" />
+            </a>
+            <div class="home_logout">
+                <a href="/">Home</a> | <a href="/">Log out</a>
+            </div>
+    </header>
+
+    <div class="main_container">
+        <div class="main" ng-view></div>
+    </div>
+    </div>
+
+</body>
+
+</html>
