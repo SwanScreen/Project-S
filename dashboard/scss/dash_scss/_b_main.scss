@@ -65,7 +65,7 @@ ul.tag_list {
     }
 }
 ul.button-group {
-    //margin: 0.5em 0.3em 0 0;
+    margin: 0em 0.3em 0 0;
     li {
         height: 51px;
         margin: 0;
@@ -75,8 +75,10 @@ ul.button-group {
             margin-bottom: 0;
         }
     }
+
 }
-.button-group > li .button.small,  {
+.button-group > li .button.small,
+{
     padding-left: 1.5rem;
     padding-right: 1.5rem;
 }
@@ -91,15 +93,19 @@ ul.button-group {
         font-size: 1.5em;
         line-height: 1em;
     }
+        .button-group > li .button.small {
+        margin-top: 0.3em;
+    }
 }
 @media all and (max-width: 700px) {
     ul.button-group {
         float: left !important;
         clear: both;
-        margin-left:2px;
+        margin-left: 2px;
         li a.button {
             max-width: 74px;
             margin-top: 0;
         }
     }
+
 }

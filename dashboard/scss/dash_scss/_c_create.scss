@@ -13,8 +13,10 @@ section.create {
         height: 200px;
         background: #000;
     }
-    .animation.row,
     .toggels.row {
+        padding-top: 18px;
+    }
+    .animation.row {
         padding-top: 25px;
     }
     input[type="radio"] {
@@ -26,15 +28,17 @@ section.create {
     .animation_box {
         margin-top: 15px;
     }
-    .exit {
-        font-weight: 900;
-        text-align: right;
-        font-size: 40px;
-        a {
-            opacity: .3;
-        }
-        a:hover {
-            opacity: .7;
-        }
+    .ng-pristine #error_message {
+        opacity: 0 !important;
+    }
+    #error_message {
+        @include transition;
+        color: lighten($primary-color, 15%);
+        margin-top:-15px;
+        opacity: 0;
+    }
+    #error_message.active,
+    {
+        opacity: 1;
     }
 }

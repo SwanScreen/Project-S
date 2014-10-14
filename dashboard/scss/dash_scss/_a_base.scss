@@ -33,6 +33,17 @@ a.create_new {
 a.create_new:hover {
     background: #1b6ba6;
 }
+div.exit {
+    font-weight: 900;
+    text-align: right;
+    font-size: 40px;
+    a {
+        opacity: .3;
+    }
+    a:hover {
+        opacity: .7;
+    }
+}
 .home_logout {
     position: absolute;
     top: 0;
@@ -46,6 +57,15 @@ a.create_new:hover {
     a:hover {
         text-decoration: underline;
     }
+}
+input.ng-invalid {
+  border: 1px solid $warning-color;;
+}
+input.ng-valid {
+  border: 1px solid $success-color;
+}
+input.ng-valid.ng-pristine {
+    border:1px solid #ccc;
 }
 @media all and (max-width: 699px) {
     header {

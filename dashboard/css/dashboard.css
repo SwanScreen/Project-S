@@ -29,6 +29,18 @@ a.create_new:hover {
   background: #1b6ba6; }
 
 /* line 36, ../scss/dash_scss/_a_base.scss */
+div.exit {
+  font-weight: 900;
+  text-align: right;
+  font-size: 40px; }
+  /* line 40, ../scss/dash_scss/_a_base.scss */
+  div.exit a {
+    opacity: .3; }
+  /* line 43, ../scss/dash_scss/_a_base.scss */
+  div.exit a:hover {
+    opacity: .7; }
+
+/* line 47, ../scss/dash_scss/_a_base.scss */
 .home_logout {
   position: absolute;
   top: 0;
@@ -36,32 +48,44 @@ a.create_new:hover {
   color: #fff;
   line-height: 3.4em;
   padding-right: 15px; }
-  /* line 43, ../scss/dash_scss/_a_base.scss */
+  /* line 54, ../scss/dash_scss/_a_base.scss */
   .home_logout a {
     color: #fff; }
-  /* line 46, ../scss/dash_scss/_a_base.scss */
+  /* line 57, ../scss/dash_scss/_a_base.scss */
   .home_logout a:hover {
     text-decoration: underline; }
 
+/* line 61, ../scss/dash_scss/_a_base.scss */
+input.ng-invalid {
+  border: 1px solid #f08a24; }
+
+/* line 64, ../scss/dash_scss/_a_base.scss */
+input.ng-valid {
+  border: 1px solid #43ac6a; }
+
+/* line 67, ../scss/dash_scss/_a_base.scss */
+input.ng-valid.ng-pristine {
+  border: 1px solid #ccc; }
+
 @media all and (max-width: 699px) {
-  /* line 51, ../scss/dash_scss/_a_base.scss */
+  /* line 71, ../scss/dash_scss/_a_base.scss */
   header {
     height: auto; }
 
-  /* line 54, ../scss/dash_scss/_a_base.scss */
+  /* line 74, ../scss/dash_scss/_a_base.scss */
   header .wrapper {
     max-width: 400px;
     margin: 0 auto;
     position: relative; }
 
-  /* line 59, ../scss/dash_scss/_a_base.scss */
+  /* line 79, ../scss/dash_scss/_a_base.scss */
   .home_logout {
     text-align: right;
     margin-top: 10%;
     width: 130px;
     right: 0; }
 
-  /* line 66, ../scss/dash_scss/_a_base.scss */
+  /* line 86, ../scss/dash_scss/_a_base.scss */
   a.create_new {
     position: relative; } }
 /* line 1, ../scss/dash_scss/_b_main.scss */
@@ -137,41 +161,48 @@ ul.tag_list {
   .tag_list_item .tag_status {
     color: #a2a2a2; }
 
-/* line 69, ../scss/dash_scss/_b_main.scss */
-ul.button-group li {
-  height: 51px;
-  margin: 0; }
-  /* line 72, ../scss/dash_scss/_b_main.scss */
-  ul.button-group li a.button {
-    max-width: 76px;
-    margin-top: 0.8em;
-    margin-bottom: 0; }
+/* line 67, ../scss/dash_scss/_b_main.scss */
+ul.button-group {
+  margin: 0em 0.3em 0 0; }
+  /* line 69, ../scss/dash_scss/_b_main.scss */
+  ul.button-group li {
+    height: 51px;
+    margin: 0; }
+    /* line 72, ../scss/dash_scss/_b_main.scss */
+    ul.button-group li a.button {
+      max-width: 76px;
+      margin-top: 0.8em;
+      margin-bottom: 0; }
 
-/* line 79, ../scss/dash_scss/_b_main.scss */
+/* line 81, ../scss/dash_scss/_b_main.scss */
 .button-group > li .button.small {
   padding-left: 1.5rem;
   padding-right: 1.5rem; }
 
-/* line 83, ../scss/dash_scss/_b_main.scss */
+/* line 85, ../scss/dash_scss/_b_main.scss */
 .small.img.button img {
   width: 27px; }
 
 @media all and (max-width: 1023px) {
-  /* line 87, ../scss/dash_scss/_b_main.scss */
+  /* line 89, ../scss/dash_scss/_b_main.scss */
   .tag_list_item .tag_status {
     display: block; }
 
-  /* line 90, ../scss/dash_scss/_b_main.scss */
+  /* line 92, ../scss/dash_scss/_b_main.scss */
   .tag_list_item .tag_name {
     font-size: 1.5em;
-    line-height: 1em; } }
-@media all and (max-width: 700px) {
+    line-height: 1em; }
+
   /* line 96, ../scss/dash_scss/_b_main.scss */
+  .button-group > li .button.small {
+    margin-top: 0.3em; } }
+@media all and (max-width: 700px) {
+  /* line 101, ../scss/dash_scss/_b_main.scss */
   ul.button-group {
     float: left !important;
     clear: both;
     margin-left: 2px; }
-    /* line 100, ../scss/dash_scss/_b_main.scss */
+    /* line 105, ../scss/dash_scss/_b_main.scss */
     ul.button-group li a.button {
       max-width: 74px;
       margin-top: 0; } }
@@ -191,27 +222,41 @@ section.create {
     width: 300px;
     height: 200px;
     background: #000; }
-  /* line 17, ../scss/dash_scss/_c_create.scss */
-  section.create .animation.row,
+  /* line 16, ../scss/dash_scss/_c_create.scss */
   section.create .toggels.row {
+    padding-top: 18px; }
+  /* line 19, ../scss/dash_scss/_c_create.scss */
+  section.create .animation.row {
     padding-top: 25px; }
-  /* line 20, ../scss/dash_scss/_c_create.scss */
+  /* line 22, ../scss/dash_scss/_c_create.scss */
   section.create input[type="radio"] {
     zoom: 2;
     margin-bottom: 0px;
     position: relative;
     top: 2px; }
-  /* line 26, ../scss/dash_scss/_c_create.scss */
+  /* line 28, ../scss/dash_scss/_c_create.scss */
   section.create .animation_box {
     margin-top: 15px; }
-  /* line 29, ../scss/dash_scss/_c_create.scss */
-  section.create .exit {
-    font-weight: 900;
-    text-align: right;
-    font-size: 40px; }
-    /* line 33, ../scss/dash_scss/_c_create.scss */
-    section.create .exit a {
-      opacity: .3; }
-    /* line 36, ../scss/dash_scss/_c_create.scss */
-    section.create .exit a:hover {
-      opacity: .7; }
+  /* line 31, ../scss/dash_scss/_c_create.scss */
+  section.create .ng-pristine #error_message {
+    opacity: 0 !important; }
+  /* line 34, ../scss/dash_scss/_c_create.scss */
+  section.create #error_message {
+    -webkit-transition: all .3s;
+    transition: all .3s;
+    color: #4aa1e2;
+    margin-top: -15px;
+    opacity: 0; }
+  /* line 41, ../scss/dash_scss/_c_create.scss */
+  section.create #error_message.active {
+    opacity: 1; }
+
+/* line 2, ../scss/dash_scss/_d_print.scss */
+section.print .gray.bullet-item {
+  background-color: #e1e1e1; }
+/* line 5, ../scss/dash_scss/_d_print.scss */
+section.print .cta-button a {
+  width: 180px; }
+/* line 8, ../scss/dash_scss/_d_print.scss */
+section.print .pricing-table .title {
+  background-color: #888888; }
