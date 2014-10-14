@@ -1,0 +1,78 @@
+<section class="row hour_meter">
+
+    <div class="remaining large-6 medium-8 small-12 columns text-left">
+        <div>Remaining play time: {{remaining_time_string}} of total {{user_settings.total_hours}} hours</div>
+    </div>
+    <div class="remaining large-6 medium-4 small-12 columns text-right "><a class="secondary button">Get more hours</a>
+    </div>
+
+
+    <div class="row bottom">
+        <div class="row meter_outer">
+            <div class="row meter_inner" id="meter_inner">
+
+            </div>
+        </div>
+    </div>
+
+    <div class="row tags">
+        <ul class="tag_list">
+            <li ng-animate="'animate'" class="tag_list_item" ng-repeat="item in user_tags ">
+                <div class="row tag">
+
+                    <a class="edit_delete delete" title="Delete this hashtag" alt="Delete" href="" ng-click="delete_tag(user_tags[user_tags.indexOf(item)].tag_id)">
+                        <img src="http://stage.swanscreen.com/admin/application/views/dashboard/images/Admin1_20.png" />
+                    </a>
+
+                    <a class="edit_delete" title="Slideshow settings" alt="Settings" href="#/edit/{{user_tags[user_tags.indexOf(item)].tag_id}}">
+                        <img src="http://stage.swanscreen.com/admin/application/views/dashboard/images/Admin1_22.png" />
+                    </a>
+
+                    <div class="row tag_description">
+                        <span class="tag_name">#{{user_tags[user_tags.indexOf(item)].tag_value}} </span>
+                        <span class="tag_status">{{user_tags[user_tags.indexOf(item)].total_photos}} photos, {{user_tags[user_tags.indexOf(item)].total_videos}} videos and                                                            {{user_tags[user_tags.indexOf(item)].total_tweets}} tweets</span>
+                    </div>
+
+                    <ul class="button-group right">
+                        <li>
+                            <a href="#/peek/{{user_tags[user_tags.indexOf(item)].tag_value}}" class="small secondary img button" title="Peek for 5 minutes" alt="Peek">
+                                <img src="http://stage.swanscreen.com/admin/application/views/dashboard/images/Admin1_11.png" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" ng-click="save_tag(user_tags[user_tags.indexOf(item)].tag_value)" class="small secondary img button" title="Save images to your hard Drive" alt="Save">
+                                <img src="http://stage.swanscreen.com/admin/application/views/dashboard/images/Admin1_13.png" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#/print/{{user_tags[user_tags.indexOf(item)].tag_id}}" class="small secondary img button" title="Printing materials" alt="Print">
+                                <img src="http://stage.swanscreen.com/admin/application/views/dashboard/images/Admin1_15.png" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#/show/{{user_tags[user_tags.indexOf(item)].tag_value}}" class="small img button" title="Play the slideshow" alt="Play">
+                                <img src="http://stage.swanscreen.com/admin/application/views/dashboard/images/Admin1_17.png" />
+                            </a>
+                        </li>
+                    </ul>
+
+
+                </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+</section>
+
+
+
+<!--
+<section class="artistinfo">
+    CREATE STUFF
+    <a href="#/dashboard">&raquo; dashboard</a>
+    <a href="#/create">&raquo; create</a>
+    <a href="#/edit/:itemId">&raquo; edit</a>
+    <a href="#/print">&raquo; Print</a>
+</section>
+-->

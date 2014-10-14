@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "file": "",
+  "sources": ["http://stage.swanscreen.com/admin/application/views/dashboard/scss/dashboard.scss","http://stage.swanscreen.com/admin/application/views/dashboard/scss/dash_scss/_a_base.scss","http://stage.swanscreen.com/admin/application/views/dashboard/scss/dash_scss/_b_main.scss","http://stage.swanscreen.com/admin/application/views/dashboard/scss/dash_scss/_c_create.scss","http://stage.swanscreen.com/admin/application/views/dashboard/scss/dash_scss/_d_print.scss"],
+  "names": [],
+  "mappings": "ACKA;EAEI,kBAPW;EAQX,aAAa;EACb,gBAAgB;EAChB,QAAQ;;AAEZ;EACI,QAAQ;EACR,WAAW;;AAEf,CAAC;EACG,UAAU;EACV,KAAK;EACL,MAAM;EACN,aAAa;EAAjB,CAAC,YAAY;IAEL,OAAO;IACP,SAAS;;AAGjB;EACI,UAAU;EACV,KAAK;EACL,OAAO;EACP,OAAO;EACP,aAAa;EAAjB,aAAa;IAEL,OAAO;EACf,aAAa,CAAC;IAEN,iBAAiB"
+}

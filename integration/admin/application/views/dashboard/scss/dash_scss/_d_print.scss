@@ -1,0 +1,11 @@
+section.print {
+    .gray.bullet-item {
+        background-color: lighten($secondary-color,35%);
+    }
+    .cta-button a{
+        width: 180px;
+    }
+    .pricing-table .title {
+        background-color: $secondary-color;
+    }
+}

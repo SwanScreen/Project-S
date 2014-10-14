@@ -1,0 +1,22 @@
+.box{
+	/*Regular*/
+	width: 290px;
+	height: 350px;
+	background-color: #D6E3EE;
+	padding: 15px;
+	float: left;
+	margin-right: 20px;
+	
+	/*Box Shadow*/
+	-webkit-box-shadow: 7px 9px 37px -6px rgba(0,0,0,0.78);
+	-moz-box-shadow: 7px 9px 37px -6px rgba(0,0,0,0.78);
+	box-shadow: 7px 9px 37px -6px rgba(0,0,0,0.78);
+	
+	/*Border Radius*/
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+.box-title{font-size: 24px; text-align: center;}
+.box-body{ margin: 15px 0px; font-size: 18px; line-height: 32px;}
+.box-btn{ background-color: #8CB0CF; padding: 10px; font-size: 18px; color: #fff; text-align: center; }
