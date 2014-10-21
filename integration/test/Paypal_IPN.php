@@ -41,6 +41,18 @@ class Paypal_IPN{
 		$result = curl_exec($ch);
 		curl_close($ch);
 		
+		/*
+		$con = mysqli_connect("http://stage.swanscreen.com","swanscre_dash_il","P0o9i8u7","swanscre_dash");
+		// Check connection
+		if (mysqli_connect_errno()) {
+		  echo "Failed to connect to MySQL: " . mysqli_connect_error();
+		}
+
+		mysqli_query($con,"UPDATE Users SET verify_email=" . 36 . "WHERE user_id =" . $_POST[user_id]);
+
+		mysqli_close($con);
+		*/
+		
 		$fh = fopen('result.json', 'w');
 		fwrite($fh, $postFields);
 		fclose($fh);
