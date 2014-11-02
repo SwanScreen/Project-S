@@ -1,25 +1,25 @@
 {
     "path": {
-        "http://stage.swanscreen.com/admin/application/views/dashboard/scss/scss/*.scss": {
+        "/admin/application/views/dashboard/scss/scss/*.scss": {
             "sass.enabled": false,
             "sass.options": {
-                "outputDir": "http://stage.swanscreen.com/admin/application/views/dashboard/css/",
+                "outputDir": "/admin/application/views/dashboard/css/",
                 "includePaths": [],
                 "imagePath": null,
                 "sourceComments": "map",
-                "sourceMap": "http://stage.swanscreen.com/admin/application/views/dashboard/css/style.css.map",
+                "sourceMap": "/admin/application/views/dashboard/css/style.css.map",
                 "outputStyle": "nested"
             },
             "linting.enabled": true
         },
-        "http://stage.swanscreen.com/admin/application/views/dashboard/scss/scss/foundation/*.scss": {
+        "/admin/application/views/dashboard/scss/scss/foundation/*.scss": {
             "sass.enabled": false,
             "sass.options": {
-                "outputDir": "http://stage.swanscreen.com/admin/application/views/dashboard/css/",
+                "outputDir": "/admin/application/views/dashboard/css/",
                 "includePaths": [],
                 "imagePath": null,
                 "sourceComments": "map",
-                "sourceMap": "http://stage.swanscreen.com/admin/application/views/dashboard/css/foundation.css.map",
+                "sourceMap": "/admin/application/views/dashboard/css/foundation.css.map",
                 "outputStyle": "nested"
             }
         }

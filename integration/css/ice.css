@@ -5,7 +5,7 @@
  * 4. SECTION TYPO & DETAILS
  * 5. SEPARATORS AND TRIANGLES
  * 6. ICON COLUMNS
- * 7. BUTTONS             
+ * 7. BUTTONS
  * 8. REVIEWS
  * 9. SCREENS
  * 10. DEMO
@@ -16,16 +16,16 @@
 
 /**
  * MAIN COLORS
- * blue           = #66cccc
- * alternate blue = #4c97b2
+ * blue           = #1f7cc1
+ * alternate blue = #1b6ba6
  */
 
 /**
  *
- * 
+ *
  * 1. CSS RESET
  *
- * 
+ *
  */
 html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -82,12 +82,12 @@ a {
     vertical-align:baseline;
     background:transparent;
     text-decoration: none;
-    color: #66cccc;
+    color: #1f7cc1;
     transition: color 0.3s;
     -webkit-transition: color 0.3s;
 }
 a:hover {
-    color: #4c97b2;
+    color: #1b6ba6;
 }
 ins {
     background-color:#ff9;
@@ -146,7 +146,7 @@ blockquote {
 	font-weight: 300;
 	line-height: 42px;
 	margin: 40px 0 40px 50px;
-	border-left: 4px solid #66cccc;
+	border-left: 4px solid #1f7cc1;
 	padding-left: 30px;
 }
 
@@ -164,10 +164,10 @@ max-width: 100%;
 
 /**
  *
- * 
+ *
  * 2. HEADER SECTION (menu&slider)
  *
- * 
+ *
  */
 #topContainer {
     width: 100%;
@@ -175,7 +175,7 @@ max-width: 100%;
     background: url('../images/background.jpg') no-repeat center;
     background-size: cover;
     top: 0;
-    z-index: 1;
+    z-index: 0;
 }
 
 #contentWrapper {
@@ -184,12 +184,14 @@ max-width: 100%;
     top: 0px;
     transition: all 0.5s;
     -webkit-transition: all 0.5s;
+    z-index: 5;
+    background: #fff;
 }
 
 
 #navigationWrap {
     position: relative;
-    margin: 100px 0 100px;
+    margin: 10px 0 50px;
     width: 100%;
 }
 
@@ -202,7 +204,6 @@ max-width: 100%;
     margin: 0;
     padding: 0;
     position: relative;
-    margin-top: 50px;
 }
 
 .mainMenu li {
@@ -219,27 +220,25 @@ max-width: 100%;
     padding: 10px 20px;
     text-decoration: none;
     background: transparent;
-    -webkit-border-radius: 350px;
-    -moz-border-radius: 350px;
     border-radius: 350px;
     transition: all 0.3s;
     -webkit-transition: all 0.3s;
 }
 
 .menuActive a {
-    color: #4c97b2 !important;
+    color: #1b6ba6 !important;
     background: #fff !important;
 }
 
 .mainMenu li a:hover {
-    color: #4c97b2;
+    color: #1b6ba6;
     background: #fff;
 }
 
 #followMenu {
     width: 100%;
     position: fixed;
-    background: #f7f7f7; 
+    background: #f7f7f7;
     background-size: cover;
     padding: 30px 0;
     z-index: 20;
@@ -254,7 +253,7 @@ max-width: 100%;
 }
 
 #followMenu .mainMenu li a:hover, #followMenu .mainMenu .menuActive a{
-    background: #66cccc !important;
+    background: #1f7cc1 !important;
     color: #fff !important;
 }
 
@@ -276,7 +275,7 @@ max-width: 100%;
 }
 
 .sliderText span{
-    font-weight: 300;
+    font-weight: 400;
 }
 
 .sliderButtonWrap {
@@ -303,7 +302,7 @@ max-width: 100%;
     z-index: 20;
     padding: 10px;
     font-size: 30px;
-    background: #66cccc;
+    background: #1f7cc1;
     display: none;
 }
 
@@ -318,10 +317,10 @@ max-width: 100%;
 
 /**
  *
- * 
+ *
  * 3. GENERAL SECTION STYLES
  *
- * 
+ *
  */
 .section-80-130 {
     padding: 80px 0 130px;
@@ -340,12 +339,13 @@ max-width: 100%;
 }
 
 .section-160-30 {
-    padding: 160px 0 30px;    
+    padding: 160px 0 30px;
 }
 
 .whiteBgSection {
     background: #fff;
     position: relative;
+    z-index: 99999;
 }
 
 .grayBgSection {
@@ -356,18 +356,18 @@ max-width: 100%;
 .textureBgSection {
     position: relative;
     /*background-attachment:fixed;*/
-    background-size: cover; 
-    background-color: #fff; 
-    background-position: 0 0; 
+    background-size: cover;
+    background-color: #fff;
+    background-position: 0 0;
 }
 
 
 /**
  *
- * 
+ *
  * 4. SECTION TYPO & DETAILS
  *
- * 
+ *
  */
 .sectionTitle, .sectionDescription{
     text-align: center;
@@ -389,7 +389,7 @@ max-width: 100%;
     width: 40px;
     height: 4px;
     margin: 20px auto;
-    background: #66cccc;
+    background: #1f7cc1;
 }
 
 .grayBgSection, .whiteBgSection {
@@ -425,13 +425,13 @@ max-width: 100%;
 
 /**
  *
- * 
+ *
  * 5. SEPARATORS AND TRIANGLES
  *
- * 
+ *
  */
 .separator80 {
-    height: 80px;
+    height: 50px;
 }
 
 .separator160 {
@@ -447,8 +447,8 @@ max-width: 100%;
     top: -160px;
     width: 100%;
     height: 160px;
-    display: block;  
-    z-index: 99; 
+    display: block;
+    z-index: 99;
 }
 
 .triangleBottom {
@@ -473,9 +473,9 @@ max-width: 100%;
 /**
  *
  * 6. ICON COLUMNS
- * 
+ *
  */
-/*center icon col*/ 
+/*center icon col*/
 .iconColWrap {
     text-align: center;
 }
@@ -483,12 +483,10 @@ max-width: 100%;
 .iconColWrap i.fa {
     min-width: 30px;
     font-size: 32px;
-    border: 2px solid #66cccc;
-    color: #66cccc;
+    border: 2px solid #1f7cc1;
+    color: #1f7cc1;
     padding: 40px;
     background: transparent;
-    -webkit-border-radius: 350px;
-    -moz-border-radius: 350px;
     border-radius: 350px;
     cursor: default;
     transition: background 0.3s, color 0.3s;
@@ -500,7 +498,7 @@ max-width: 100%;
 
 .iconColWrap:hover i.fa {
     color: #fff;
-    background: #66cccc;
+    background: #1f7cc1;
 }
 
 .iconColWrap h2 {
@@ -513,7 +511,7 @@ max-width: 100%;
 }
 
 .iconColWrap:hover h2 {
-    color: #66cccc;
+    color: #1f7cc1;
 }
 
 
@@ -524,7 +522,7 @@ max-width: 100%;
     line-height: 22px;
 }
 
-/*right icon col*/ 
+/*right icon col*/
 .iconRightColWrap {
     transform: translate(0, 0) translate3d(0px, 0px, 0px);
     -webkit-transform: translate(0, 0) translate3d(0px, 0px, 0px);
@@ -534,6 +532,7 @@ max-width: 100%;
 }
 
 .iconRightColWrap:hover {
+    -ms-transform: translate(-10px, 0);
     transform: translate(-10px, 0);
     -webkit-transform: translate(-10px, 0);
 }
@@ -547,12 +546,10 @@ max-width: 100%;
 
 .iconRightColWrap i.fa {
     font-size: 32px;
-    border: 2px solid #66cccc;
-    color: #66cccc;
+    border: 2px solid #1f7cc1;
+    color: #1f7cc1;
     padding: 25px;
     background: transparent;
-    -webkit-border-radius: 350px;
-    -moz-border-radius: 350px;
     border-radius: 350px;
     cursor: default;
     transition: background 0.3s, color 0.3s;
@@ -564,7 +561,7 @@ max-width: 100%;
 
 .iconRightColWrap:hover i.fa {
     color: #fff;
-    background: #66cccc;
+    background: #1f7cc1;
 }
 
 .iconRightColWrap h2 {
@@ -577,7 +574,7 @@ max-width: 100%;
 }
 
 .iconRightColWrap:hover h2 {
-    color: #66cccc;
+    color: #1f7cc1;
 }
 
 
@@ -588,7 +585,7 @@ max-width: 100%;
     line-height: 22px;
 }
 
-/*left icon col*/ 
+/*left icon col*/
 .iconLeftColWrap {
     transform: translate(0, 0) translate3d(0px, 0px, 0px);
     -webkit-transform: translate(0, 0) translate3d(0px, 0px, 0px);
@@ -598,6 +595,7 @@ max-width: 100%;
 }
 
 .iconLeftColWrap:hover {
+    -ms-transform: translate(10px, 0);
     transform: translate(10px, 0);
     -webkit-transform: translate(10px, 0);
 }
@@ -611,12 +609,10 @@ max-width: 100%;
 
 .iconLeftColWrap i.fa {
     font-size: 32px;
-    border: 2px solid #66cccc;
-    color: #66cccc;
+    border: 2px solid #1f7cc1;
+    color: #1f7cc1;
     padding: 25px;
     background: transparent;
-    -webkit-border-radius: 350px;
-    -moz-border-radius: 350px;
     border-radius: 350px;
     cursor: default;
     transition: background 0.3s, color 0.3s;
@@ -628,7 +624,7 @@ max-width: 100%;
 
 .iconLeftColWrap:hover i.fa {
     color: #fff;
-    background: #66cccc;
+    background: #1f7cc1;
 }
 
 .iconLeftColWrap h2 {
@@ -641,7 +637,7 @@ max-width: 100%;
 }
 
 .iconLeftColWrap:hover h2 {
-    color: #66cccc;
+    color: #1f7cc1;
 }
 
 .iconLeftColWrap p {
@@ -654,7 +650,7 @@ max-width: 100%;
 /**
  *
  * 7. BUTTONS
- * 
+ *
  */
 .buttonBig, .dlButton {
     font-size: 18px;
@@ -663,9 +659,8 @@ max-width: 100%;
     text-decoration: none;
     padding: 18px 35px;
     border: 2px solid #fff;
-    -webkit-border-radius: 350px;
-    -moz-border-radius: 350px;
     border-radius: 350px;
+    -webkit-transform: translate3d(0px, 0px, 0px);
     transform: translate3d(0px, 0px, 0px);
     display: inline-block;
     background-color:transparent;
@@ -675,14 +670,13 @@ max-width: 100%;
 
 .buttonBig:hover, .dlButton:hover {
     background: #fff;
-    color: #4c97b2;
+    color: #1b6ba6;
 }
 
 .dlButton {
-    font-size: 24px;
+    font-size: 50px;
     text-align: left;
-    padding: 8px 35px 8px 15px;
-    margin: 0 15px;
+    padding: 28px 35px 28px 35px;
     z-index: 5;
     position: relative;
 }
@@ -694,22 +688,14 @@ max-width: 100%;
     margin-top: 4px;
 }
 
-.dlButton .dlButtonWrap {
-    font-size: 14px;
-    float: right;
-}
-
-.dlButton .dlButtonSmall {
-    font-size: 24px;
-}
 
 
 /**
  *
- * 
+ *
  * 8. REVIEWS
  *
- * 
+ *
  */
 .testWrapper {
     overflow: hidden;
@@ -751,8 +737,6 @@ max-width: 100%;
 
 
 .revCustomer {
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
     border-radius: 50%;
     border: 2px solid #fff;
     position: relative;
@@ -760,26 +744,24 @@ max-width: 100%;
 
 .revBubble {
     background: #fff;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
     border-radius: 10px;
     padding: 30px 40px;
 }
 
 
 .arrowLeftRev {
-    width: 0; 
-    height: 0; 
+    width: 0;
+    height: 0;
     border-top: 10px solid transparent;
-    border-bottom: 10px solid transparent; 
-    border-right:10px solid #fff; 
+    border-bottom: 10px solid transparent;
+    border-right:10px solid #fff;
     position: absolute;
     left: -10px;
     top: 45px;
 }
 
 .revText {
-    color: #66cccc;
+    color: #1f7cc1;
     font-weight: 300;
     font-size: 30px;
     line-height: 38px;
@@ -807,8 +789,6 @@ max-width: 100%;
     width: 10px;
     height: 10px;
     background: transparent;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
     border-radius: 50%;
     border: 2px solid #fff;
     margin-right: 10px;
@@ -823,17 +803,15 @@ max-width: 100%;
 
 /**
  *
- * 
+ *
  * 9. SCREENS
  *
- * 
+ *
  */
 .screenImg {
     background: #fff;
     padding: 8px;
     border: 1px solid #e6e6e6;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
     border-radius: 10px;
     transition: border-color 0.4s;
     -webkit-transition: border-color 0.4s;
@@ -841,7 +819,7 @@ max-width: 100%;
 }
 
 .screenImg:hover {
-    border-color: #66cccc;
+    border-color: #1f7cc1;
 }
 
 #screensViewportWrap {
@@ -894,9 +872,7 @@ button, input[type="submit"] {
     font-weight: 500;
     margin: 0 5px;
     padding: 8px 20px;
-    -webkit-border-radius: 45px;
-    -moz-border-radius: 45px;
-    border-radius: 45px;   
+    border-radius: 45px;
     font-size: 14px;
     cursor: pointer;
     transition: color 0.3s, background 0.3s, border-color 0.3s;
@@ -906,8 +882,8 @@ button, input[type="submit"] {
 
 button.active, button:hover, input[type="submit"]:hover {
     color: #fff;
-    background: #66cccc;
-    border-color: #66cccc;
+    background: #1f7cc1;
+    border-color: #1f7cc1;
 }
 
 .screensArrows {
@@ -915,11 +891,9 @@ button.active, button:hover, input[type="submit"]:hover {
     top: 50%;
     font-size: 32px;
     margin-top: -30px;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
     border-radius: 50%;
     border: 2px solid #cccccc;
-    padding: 5px 15px; 
+    padding: 5px 15px;
     line-height: 32px;
     color: #cccccc;
     transition: color 0.3s, background 0.3s, border-color 0.3s;
@@ -932,7 +906,7 @@ button.active, button:hover, input[type="submit"]:hover {
     cursor: default;
 }
 
-.screensArrowsActive, .screensArrowsActive i { 
+.screensArrowsActive, .screensArrowsActive i {
     cursor: pointer;
     opacity: 1;
 }
@@ -940,7 +914,7 @@ button.active, button:hover, input[type="submit"]:hover {
 .screensArrowsActive:hover {
     color: #fff;
     border-color: #fff;
-    background: #66cccc;
+    background: #1f7cc1;
 }
 
 #screensLeftAr i {
@@ -965,13 +939,13 @@ button.active, button:hover, input[type="submit"]:hover {
 
 /**
  *
- * 
+ *
  * 10. DEMO
  *
- * 
+ *
  */
-.embed-container { position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden; max-width: 100%; height: auto; } 
-.embed-container iframe, .embed-container object, 
+.embed-container { position: relative; padding-bottom: 53.65%; padding-top: 30px; height: 0; overflow: hidden; max-width: 100%; height: auto; }
+.embed-container iframe, .embed-container object,
 .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
 
 .floatingPhone {
@@ -990,10 +964,10 @@ button.active, button:hover, input[type="submit"]:hover {
 
 /**
  *
- * 
+ *
  * 11. FORMS
  *
- * 
+ *
  */
 input:not([type=submit])  {
     width: 85%;
@@ -1001,10 +975,8 @@ input:not([type=submit])  {
     margin-bottom: 20px;
     padding: 15px 16px;
     border: 2px solid #cccccc;
-    -webkit-border-radius: 45px;
-    -moz-border-radius: 45px;
-    border-radius: 45px;  
-    color: #666; 
+    border-radius: 45px;
+    color: #666;
     transition: border-color 0.6s;
     -webkit-transition: border-color 0.6s;
 }
@@ -1016,10 +988,8 @@ textarea {
     resize: vertical;
     margin-bottom: 20px;
     border: 2px solid #cccccc;
-    -webkit-border-radius: 25px;
-    -moz-border-radius: 25px;
     border-radius: 25px;
-    color: #666; 
+    color: #666;
     font-family: 'Roboto', sans-serif;
     transition: border-color 0.6s;
     -webkit-transition: border-color 0.6s;
@@ -1028,26 +998,24 @@ textarea {
 
 input:focus, textarea:focus {
     outline: 0 transparent;
-    border-color: #66cccc;
+    border-color: #1f7cc1;
 }
 
 input[type="submit"]  {
     font-size: 18px;
     padding: 15px 50px;
     margin: 0;
-    color: #66cccc;
-    border-color: #66cccc;
+    color: #1f7cc1;
+    border-color: #1f7cc1;
 }
 
 .del-fa {
-    font-size: 26px;
-    border: 2px solid #66cccc;
-    color: #66cccc;
+    font-size: 26px !important;
+    border: 2px solid #1f7cc1;
+    color: #1f7cc1;
     padding: 12px;
     min-width: 26px;
     text-align: center;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
     border-radius: 50%;
 }
 
@@ -1071,15 +1039,15 @@ input[type="submit"]  {
 
 /**
  *
- * 
+ *
  * 12. FOOTER
  *
- * 
+ *
  */
 .footer {
     width: 100%;
     background: url('../images/background.jpg') no-repeat center;
-    background-size: cover;    
+    background-size: cover;
     text-align: center;
     font-size: 14px;
     color: #fff;
@@ -1088,7 +1056,7 @@ input[type="submit"]  {
 .footer p {
     font-size: 14px;
     color: #fff;
-    line-height: 24px;    
+    line-height: 24px;
 }
 
 .footer i.fa {
@@ -1098,8 +1066,6 @@ input[type="submit"]  {
     padding: 13px;
     min-width: 26px;
     background: transparent;
-    -webkit-border-radius: 350px;
-    -moz-border-radius: 350px;
     border-radius: 350px;
     transition: background 0.3s, color 0.3s;
     -webkit-transition: background 0.3s, color 0.3s;
@@ -1110,7 +1076,7 @@ input[type="submit"]  {
 }
 
 .footer i.fa:hover {
-    color: #66cccc;
+    color: #1f7cc1;
     background: #fff;
 }
 
@@ -1122,10 +1088,10 @@ input[type="submit"]  {
 
 /**
  *
- * 
+ *
  * 13. BLOG
  *
- * 
+ *
  */
 
 
@@ -1138,9 +1104,7 @@ input[type="submit"]  {
 	text-align: center;
 	font-size: 30px;
 	text-transform: uppercase;
-	background: #66cccc;
-	-webkit-border-radius: 50px;
-	-moz-border-radius: 50px;
+	background: #1f7cc1;
 	border-radius: 50px;
 	padding: 9px 0;
 	color: #fff;
@@ -1155,11 +1119,9 @@ input[type="submit"]  {
 }
 
 .postType {
-	border: 2px solid #66cccc;
-	-webkit-border-radius: 50px;
-	-moz-border-radius: 50px;
+	border: 2px solid #1f7cc1;
 	border-radius: 50px;
-	color: #66cccc;
+	color: #1f7cc1;
 	text-align: center;
 	padding: 22px 0;
 	font-size: 21px;
@@ -1176,9 +1138,7 @@ input[type="submit"]  {
 
 .attachment-delicious-thumb {
 	margin-bottom: 40px;
-    -webkit-border-radius: 12px;
-    -moz-border-radius: 12px;
-    border-radius: 12px;    
+    border-radius: 12px;
 }
 
 .spacerDel {
@@ -1195,7 +1155,7 @@ h4.widgetTitle {
 	font-size: 16px;
 	text-transform: uppercase;
 	font-weight: 400;
-	margin-bottom: 10px;	
+	margin-bottom: 10px;
 }
 
 .widget {
@@ -1209,8 +1169,6 @@ h4.widgetTitle {
 
 #searchform #s {
 	width: 100%;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     margin-bottom: 0;
 }
@@ -1262,15 +1220,13 @@ h4.widgetTitle {
 }
 
 #sidebarDelicious ul li a:hover {
-	color: #66cccc;
+	color: #1f7cc1;
 }
 
 .delCatCount {
 	float: right;
 	border: 2px solid #cccccc;
 	padding: 1px 12px;
-	-webkit-border-radius: 50px;
-	-moz-border-radius: 50px;
 	border-radius: 50px;
 	transition: all 0.3s;
 	-webkit-transition: all 0.3s;
@@ -1278,9 +1234,9 @@ h4.widgetTitle {
 }
 
 #sidebarDelicious ul li a:hover .delCatCount {
-	background: #66cccc;
+	background: #1f7cc1;
 	color: #fff;
-	border-color: #66cccc;
+	border-color: #1f7cc1;
 }
 
 #sidebarDelicious .tagcloud a {
@@ -1288,8 +1244,6 @@ h4.widgetTitle {
 	color: #999;
 	border: 2px solid #cccccc;
 	padding: 5px 15px;
-	-webkit-border-radius: 50px;
-	-moz-border-radius: 50px;
 	border-radius: 50px;
 	margin: 0px 5px 8px 0;
     display: inline-block;
@@ -1297,9 +1251,9 @@ h4.widgetTitle {
 	-webkit-transition: all 0.3s;
 }
 #sidebarDelicious .tagcloud a:hover {
-	background: #66cccc;
+	background: #1f7cc1;
 	color: #fff;
-	border-color: #66cccc;
+	border-color: #1f7cc1;
 }
 
 .delTabWrap {
@@ -1347,7 +1301,7 @@ h4.widgetTitle {
 .divPopRec .postTextWidg {
 	width: 77%;
 	vertical-align: middle;
-	text-align: left;	
+	text-align: left;
 }
 
 .divPopRec .postTextWidg a {
@@ -1358,20 +1312,18 @@ h4.widgetTitle {
 }
 
 .divPopRec .postTextWidg a:hover {
-		color: #66cccc;
+		color: #1f7cc1;
 }
 
 .divPopRec .post-date {
 	display: block;
-	color: #66cccc;
+	color: #1f7cc1;
 	font-size: 14px;
 	font-weight: 700;
 	font-size: 14px;
 }
 
 .popTabWid, .recTabWid {
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
     box-sizing: border-box;
 	width: 49%;
 	text-align: center;
@@ -1408,7 +1360,7 @@ h4.widgetTitle {
 	border-right: 2px solid #cccccc;
 	border-top: 2px solid #cccccc;
 	border-bottom: none;
-	cursor: default;	
+	cursor: default;
 	color: #999999;
 	padding: 10px 0 12px;
 }
@@ -1440,10 +1392,8 @@ article.comment {
 }
 
 #comments .avatar {
-	-webkit-border-radius: 50px;
-	-moz-border-radius: 50px;
-	border-radius: 50px;	
-	border: 2px solid #66cccc;
+	border-radius: 50px;
+	border: 2px solid #1f7cc1;
 }
 
 .commAuth {
@@ -1472,22 +1422,18 @@ article.comment {
     padding: 10px 30px;
     margin: 20px 0 40px;
     color: #999;
-    border: 2px solid #cccccc;	
-	-webkit-border-radius: 50px;
-	-moz-border-radius: 50px;
-	border-radius: 50px;	
+    border: 2px solid #cccccc;
+	border-radius: 50px;
 	display: inline-block;
 	transition: all 0.3s;
 	-webkit-transition: all 0.3s;
 }
 
 .comment-reply-link:hover {
-	border-color: #66cccc;
+	border-color: #1f7cc1;
 }
 
 #commentform #comment, #commentform #url, #commentform #email, #commentform #author {
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     width: 100%;
 }
@@ -1529,11 +1475,10 @@ article.comment {
     top: 0;
     z-index: 1;
     opacity: 0;
+    -webkit-transition: all 0.8s;
     transition: all 0.8s;
     webkit-transition: all 0.8s;
-    -webkit-border-radius: 12px;
-    -moz-border-radius: 12px;
-    border-radius: 12px;    
+    border-radius: 12px;
 }
 
 .galleryFormatWrap img.activeGalImg {
@@ -1552,9 +1497,7 @@ article.comment {
     float: left;
     margin: 0 7px 7px 0;
     cursor: pointer;
-    -webkit-border-radius: 50px;
-    -moz-border-radius: 50px;
-    border-radius: 50px;    
+    border-radius: 50px;
 }
 
 .delGalThumb:nth-child(3), .delGalThumb:nth-child(6) , .delGalThumb:nth-child(9) {
@@ -1573,23 +1516,19 @@ article.comment {
 .imgFormatWrap {
     position: relative;
     overflow: hidden;
-    -webkit-border-radius: 12px;
-    -moz-border-radius: 12px;
-    border-radius: 12px;    
+    border-radius: 12px;
 }
 
 .imgZoomIcon {
     color: #fff;
-    background: #66cccc;
+    background: #1f7cc1;
     font-size: 50px;
     position: absolute;
     left: 50%;
     top: 60%;
     opacity: 0;
     z-index: 3;
-    -webkit-border-radius: 50px;
-    -moz-border-radius: 50px;
-    border-radius: 50px;   
+    border-radius: 50px;
     padding: 10px 13px 5px;
     margin-top: -25px;
     margin-left: -25px;
@@ -1607,21 +1546,19 @@ article.comment {
 }
 
 .moreButton {
-    color: #66cccc;
-    border: 2px solid #66cccc;
+    color: #1f7cc1;
+    border: 2px solid #1f7cc1;
     display: block;
     float: left;
     padding: 15px 28px;
     transition: all 0.3s;
     -webkit-transition: all 0.3s;
-    -webkit-border-radius: 50px;
-    -moz-border-radius: 50px;
-    border-radius: 50px;  
+    border-radius: 50px;
 }
 
 .moreButton:hover {
     color: #fff;
-    background: #66cccc;
+    background: #1f7cc1;
 }
 
 .commButton {
@@ -1633,14 +1570,13 @@ article.comment {
     padding: 15px 20px;
     transition: all 0.3s;
     -webkit-transition: all 0.3s;
-    -webkit-border-radius: 50px;
-    -moz-border-radius: 50px;
-    border-radius: 50px;   
-    transition: all 0.3s;  
+    border-radius: 50px;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
 }
 
 .commButton i {
-    font-size: 26px;   
+    font-size: 26px;
     line-height: 16px;
 }
 
@@ -1654,8 +1590,8 @@ article.comment {
 }
 
 .commButton:hover,  .commButton:hover span{
-    color: #66cccc;
-    border-color: #66cccc;
+    color: #1f7cc1;
+    border-color: #1f7cc1;
 }
 
 .navigation ul {
@@ -1670,12 +1606,10 @@ article.comment {
 .navigation ul li.active {
     font-size: 16px;
     color: #fff;
-    border: 2px solid #66cccc;
-    background: #66cccc;
+    border: 2px solid #1f7cc1;
+    background: #1f7cc1;
     padding: 14px 17px;
-    -webkit-border-radius: 50px;
-    -moz-border-radius: 50px;
-    border-radius: 50px; 
+    border-radius: 50px;
 }
 
 .navigation ul li a {
@@ -1683,28 +1617,24 @@ article.comment {
     color: #999999;
     border: 2px solid #d2d2d2;
     padding: 12px 18px;
-    -webkit-border-radius: 50px;
-    -moz-border-radius: 50px;
-    border-radius: 50px; 
+    border-radius: 50px;
     transition: all 0.3s;
     -webkit-transition: all 0.3s;
 }
 
 .navigation ul li a:hover {
     color: #fff;
-    border-color: #66cccc;
-    background: #66cccc;    
+    border-color: #1f7cc1;
+    background: #1f7cc1;
 }
 
 .pagetype {
     font-size: 20px;
     color: #fff;
     padding: 20px ;
-    background: #66cccc;
-    -webkit-border-radius: 12px;
-    -moz-border-radius: 12px;
-    border-radius: 12px;   
-    font-weight: 300; 
+    background: #1f7cc1;
+    border-radius: 12px;
+    font-weight: 300;
     margin-bottom: 50px;
 }
 
@@ -1713,7 +1643,7 @@ article.comment {
 }
 
 .postTitle a:hover {
-    color: #66cccc;
+    color: #1f7cc1;
 }
 
 /* =WordPress Core
@@ -1829,9 +1759,9 @@ a img.aligncenter {
 }
 
 .del_tweet_img a {
-    background: #66cccc;
+    background: #1f7cc1;
 }
 
 .del_tweet_img a:hover{
-    background: #4c97b2;
+    background: #1b6ba6;
 }

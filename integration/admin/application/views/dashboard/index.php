@@ -2,12 +2,12 @@
         <div class="wrapper">
             <div class="logo">
                 <a href='#/dashboard'>
-                    <img src="http://stage.swanscreen.com/admin/public/img/Admin1_03.png" alt="Create new slideshow" />
+                    <img src="/admin/public/img/Admin1_03.png" alt="Create new slideshow" />
                 </a>
             </div>
 
             <a class="create_new" href='#/create'>
-                <img src="http://stage.swanscreen.com/admin/public/img/Admin1_06.png" alt="Create new slideshow" />
+                <img src="/admin/public/img/Admin1_06.png" alt="Create new slideshow" />
             </a>
             <div class="home_logout">
                 <a href="/">Home</a> | <a href="/">Log out</a>

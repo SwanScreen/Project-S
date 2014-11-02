@@ -458,7 +458,7 @@ class LoginModel
             $user_creation_timestamp = time();
 
             // write new users data into database
-            $sql = "INSERT INTO users (user_password_hash, user_email, user_creation_timestamp, user_activation_hash, user_provider_type)
+            $sql = "INSERT INTO users (user_password_hash, user_email, user_account_type, user_creation_timestamp, user_activation_hash, user_provider_type)
                     VALUES (:user_password_hash, :user_email, :user_creation_timestamp, :user_activation_hash, :user_provider_type)";
             $query = $this->db->prepare($sql);
             $query->execute(array(':user_password_hash' => $user_password_hash,

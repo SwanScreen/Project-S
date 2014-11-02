@@ -28,7 +28,7 @@
                 </span>
             </label>
             <input id="login_input_password_new" class="login_input" type="password" name="user_password_new" pattern=".{6,}" required autocomplete="off" />
-            <input id="package" name="package" type="hidden" value="<?php echo htmlspecialchars($_GET["pack"]); ?>"/>
+            <input id="package" name="package" type="hidden" value="<?php echo htmlspecialchars($_GET["pk"]); ?>"/>
             <input type="submit"  name="register" value="Register" />
 
         </form>

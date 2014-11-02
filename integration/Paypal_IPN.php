@@ -21,11 +21,12 @@ class Paypal_IPN{
 	
 	public function run(){
 		
-		$postFields = 'cmd=_notify-validate';
+		$postFields = '';
 		
 		foreach($_POST as $key => $value){
-			$postFields .= "&$key=".urlencode($value);
+			$postFields .= '{ "' . $key . '":'. '"' . urlencode($value) . '"}, ';
 		}
+		
 		
 		$ch = curl_init();
 		
@@ -40,11 +41,22 @@ class Paypal_IPN{
 		$result = curl_exec($ch);
 		curl_close($ch);
 		
-		$fh = fopen('result.txt', 'w');
-		fwrite($fh, $result . ' -- ' . $postFields):
-		fclose($fh);
+		/*
+		$con = mysqli_connect("http://stage.swanscreen.com","swanscre_dash_il","P0o9i8u7","swanscre_dash");
+		// Check connection
+		if (mysqli_connect_errno()) {
+		  echo "Failed to connect to MySQL: " . mysqli_connect_error();
+		}
+
+		mysqli_query($con,"UPDATE Users SET verify_email=" . 36 . "WHERE user_id =" . $_POST[user_id]);
+
+		mysqli_close($con);
+		*/
 		
-		echo $result;
+		$fh = fopen('result.json', 'w');
+		fwrite($fh, $postFields);
+		fclose($fh);
+
 	
 	}
 

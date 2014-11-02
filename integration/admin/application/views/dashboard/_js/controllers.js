@@ -6,7 +6,7 @@ dashboardControllers.controller('MainController', ['$scope', '$http', '$timeout'
     function($scope, $http, $timeout) {
 
         //get the user settings from the server
-        $http.get('/admin/application/views/dashboard/js/user_settings.json').success(function(data) {
+        $http.get('http://stage.swanscreen.com/admin/public/js/user_settings.json').success(function(data) {
             $scope.user_settings = data;
 
             $scope.$watch('$viewContentLoaded', function() {
@@ -31,7 +31,7 @@ dashboardControllers.controller('MainController', ['$scope', '$http', '$timeout'
         });
 
         //get the list of tags for the users
-        $http.get('/admin/application/views/dashboard/js/user_tags.json').success(function(data) {
+        $http.get('http://stage.swanscreen.com/admin/public/js/user_tags.json').success(function(data) {
             $scope.user_tags = data;
         });
 
@@ -238,7 +238,7 @@ dashboardControllers.controller('HashtagVerificationController', ['$scope',
 //Create page controller
 dashboardControllers.controller('CreateController', ['$scope', '$http',
     function($scope, $http) {
-        $http.get('/admin/application/views/dashboard/user_tags.json').success(function(data) {
+        $http.get('http://stage.swanscreen.com/admin/public/js/user_tags.json').success(function(data) {
             //console.log(data);
             $scope.editItem_obj = {
                 "tag_value": "",
@@ -261,7 +261,7 @@ dashboardControllers.controller('CreateController', ['$scope', '$http',
 //Edit page controller - Under construction
 dashboardControllers.controller('EditController', ['$scope', '$http', '$routeParams',
     function($scope, $http, $routeParams) {
-        $http.get('/admin/application/views/dashboard/js/user_tags.json').success(function(data) {
+        $http.get('http://stage.swanscreen.com/admin/public/js/user_tags.json').success(function(data) {
 
             $scope.editItem_id = $routeParams.itemId;
             $scope.tags = data;
@@ -293,7 +293,7 @@ dashboardControllers.controller('EditController', ['$scope', '$http', '$routePar
 //Print page controller - Under construction
 dashboardControllers.controller('PrintController', ['$scope', '$http', '$routeParams',
     function($scope, $http, $routeParams) {
-        $http.get('/admin/application/views/dashboard/js/user_tags.json').success(function(data) {
+        $http.get('http://stage.swanscreen.com/admin/public/js/user_tags.json').success(function(data) {
 
             $scope.printItem_id = $routeParams.itemId;
             $scope.printItem_value = null;
@@ -320,7 +320,7 @@ dashboardControllers.controller('PrintController', ['$scope', '$http', '$routePa
 //From demo - remove before going to production
 dashboardControllers.controller('ListController', ['$scope', '$http',
     function($scope, $http) {
-        $http.get('/admin/application/views/dashboard/js/data.json').success(function(data) {
+        $http.get('http://stage.swanscreen.com/admin/public/js/data.json').success(function(data) {
             $scope.artists = data;
             $scope.artistOrder = 'name';
         });
@@ -330,7 +330,7 @@ dashboardControllers.controller('ListController', ['$scope', '$http',
 //From demo - remove before going to production
 dashboardControllers.controller('DetailsController', ['$scope', '$http', '$routeParams',
     function($scope, $http, $routeParams) {
-        $http.get('/admin/application/views/dashboard/js/data.json').success(function(data) {
+        $http.get('http://stage.swanscreen.com/admin/public/js/data.json').success(function(data) {
             $scope.artists = data;
             $scope.whichItem = $routeParams.itemId;
 

@@ -7,27 +7,27 @@ myApp.config(['$routeProvider',
     function($routeProvider) {
         $routeProvider.
         when('/list', {
-            templateUrl: '/admin/application/views/dashboard/partials/list.html',
+            templateUrl: 'http://stage.swanscreen.com/admin/application/views/dashboard/partials/list.html',
             controller: 'ListController'
         }).
         when('/details/:itemId', {
-            templateUrl: '/admin/application/views/dashboard/partials/details.html',
+            templateUrl: 'http://stage.swanscreen.com/admin/application/views/dashboard/partials/details.html',
             controller: 'DetailsController'
         }).
         when('/edit/:itemId', {
-            templateUrl: '/admin/application/views/dashboard/partials/create.html',
+            templateUrl: 'http://stage.swanscreen.com/admin/application/views/dashboard/partials/create.html',
             controller: 'EditController' //need to create create + edit controller
         }).
         when('/create/', {
-            templateUrl: '/admin/application/views/dashboard/partials/create.html',
+            templateUrl: 'http://stage.swanscreen.com/admin/application/views/dashboard/partials/create.html',
             controller: 'CreateController' //need to create create + edit controller
         }).
         when('/print/:itemId', {
-            templateUrl: '/admin/application/views/dashboard/partials/print.html',
+            templateUrl: 'http://stage.swanscreen.com/admin/application/views/dashboard/partials/print.html',
             controller: 'PrintController' //need to create print controller
         }).
         when('/', {
-            templateUrl: '/admin/application/views/dashboard/partials/main.html',
+            templateUrl: 'http://stage.swanscreen.com/admin/application/views/dashboard/partials/main.html',
             controller: 'MainController'
         }).
         otherwise({
